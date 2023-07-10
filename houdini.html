@@ -1,0 +1,1164 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+  
+  <script nonce='ZkT/SAwxk2tyVI3t555a9Q=='>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+  n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5TNSHCK');</script>
+  
+
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="vfx">
+<meta name="description" property="og:description" content="Houdini is built from the ground up to be a procedural system that empowers artists to work freely, create multiple iterations and rapidly share workflows with colleagues.">
+<meta name="google-site-verification" content="CpSfgl412XOtwVzYMOp3ZfFPcZ6B7tp2zVo-bFP5W34" />
+<title> Houdini | 3D Procedural Software for Film, TV &amp; Gamedev  | SideFX</title>
+<meta property="og:image" content="https://media.sidefx.com/uploads/fx-features/fx_background.jpg">
+<link rel="shortcut icon" href="https://static.sidefx.com/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.sidefx.com/images/apple-touch-icon.png">
+<link rel="icon" sizes="180x180" href="https://static.sidefx.com/images/apple-touch-icon.png">
+<link rel="mask-icon" href="https://static.sidefx.com/images/safari-pinned-tab.svg" color="#ff6600">
+
+
+<script src="https://static.sidefx.com/js/jquery-1.12.0.min.js"></script>
+
+<link href="https://static.sidefx.com/bundles/common-852a55f53bcec56d50ee.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="https://static.sidefx.com/hijack/hijack-styles.css" />
+
+
+<link rel="stylesheet" href="https://static.sidefx.com/css/cartridge.css">
+
+
+
+
+    <link href="https://static.sidefx.com/css/contentbox/box.css" rel="stylesheet" type="text/css" />
+
+    <link href="/static/css/contentbox/content-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://static.sidefx.com/css/lity.css">
+
+
+
+<script src="https://static.sidefx.com/bundles/common-852a55f53bcec56d50ee.min.js" ></script>
+
+
+<script src="https://static.sidefx.com/js/bootstrap.min.js"></script>
+<script src="https://static.sidefx.com/js/flat-ui-pro.min.js"></script>
+
+  
+  <script src="https://static.sidefx.com/js/vue.min.js"></script>
+  
+
+ <script src="https://static.sidefx.com/js/keyboard-acc.min.js"></script>
+
+<script src="https://static.sidefx.com/js/contentbox/box.js" type="text/javascript"></script>
+<script src="https://static.sidefx.com/js/lity.min.js" ></script>
+
+
+<!--[if lt IE 9]>
+<script src="https://static.sidefx.com/js/html5shiv.js"></script>
+<script src="https://static.sidefx.com/js/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body id="sidefxpageplus">
+
+
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TNSHCK"
+  height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="SideFX Menu">
+
+    
+    <noscript>
+      <div class="offline-warning">
+        <img alt="This website requires a browser with javascript activated. Please enable javascript before continuing." src="https://static.sidefx.com/images/noscript-warning.png" />
+      </div>
+    </noscript>
+
+    
+      
+      <div id="sfx-login-dialog" class="collapse dialog dialog-default">
+          
+<div class="container">
+  <form method="post" id="top-login-form" class="form-inline login-form" action="/login/">
+    <input type="hidden" name="csrfmiddlewaretoken" value="gKBMs2HIj18wPxviFzTFOZ7otAC4C3Fgqyy702WgI77JuMkEuBqc2QilYnTGaucF">
+    <div class="form-group form-group">
+      <input type="text" name="username" class="form-control login-field" id="sfx-login-username" placeholder="Username">
+      <label class="login-field-icon fui-user" for="sfx-login-username"></label>
+    </div>
+    <div class="form-group form-group">
+      <input type="password" name="password" class="form-control login-field" id="sfx-login-password" placeholder="Password" maxlength="4096">
+      <label class="login-field-icon fui-lock" for="sfx-login-password"></label>
+    </div>
+    <input type="hidden" name="next" value="/products/houdini/" />
+    <input class="btn btn-primary-outline btn-wide" type="submit" value="Login" />
+  </form>
+  <div class="other">
+    <small>
+      <span >Forgot your password? &nbsp;&nbsp;<a href="/password/reset/">Click here</a></span> &nbsp;&nbsp;•&nbsp;&nbsp;
+      <span >No account yet? &nbsp;&nbsp;<a href="/register/" class="register">Please Register</a></span> &nbsp;&nbsp;
+      
+        •&nbsp;&nbsp;
+        <span >Or login using &nbsp;
+            <a class="social-auth" href="/login/oidc/?next=/products/houdini/"><img src="https://static.sidefx.com/images/accounts/login/ico_orbolt.png"></a>
+            <a class="social-auth" href="/login/google-oauth2/?next=/products/houdini/"><img src="https://static.sidefx.com/images/accounts/login/ico_google.svg"></a>
+            <a class="social-auth" href="/login/facebook/?next=/products/houdini/"><img src="https://static.sidefx.com/images/accounts/login/ico_facebook.png"></a>
+            <a class="social-auth" href="/login/live/?next=/products/houdini/"><img src="https://static.sidefx.com/images/accounts/login/ico_microsoft.png"></a>
+            <a class="social-auth" href="/login/yahoo-oauth2/?next=/products/houdini/"><img src="https://static.sidefx.com/images/accounts/login/ico_yahoo.png"></a>
+        </span>
+      
+    </small>
+  </div>
+</div>
+      </div>
+      <div id="sfx-login" class="navbar-text pull-right">
+      <span id="language_selector" data-toggle="modal" data-target="#languageModal" tabindex="4"><i class="fa fa-lg fa-globe" aria-hidden="true"></i> EN</span>
+        <a class="text" href="#sfx-login-dialog" data-toggle="collapse" tabindex="5"><i class="fui-user"></i> Login</a>
+      </div>
+      
+      
+
+    <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#js-bootstrap-collapse">
+      <span class="sr-only">Toggle Navigation</span>
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+    </button>
+
+    <div class="container">
+    <div class="navbar-header">
+      
+      <a class="navbar-left" href="/" tabindex="1"><img src="https://static.sidefx.com/images/ui/sfx_logo.svg" alt="SideFX Homepage"></a>
+      
+    </div>
+
+    <div class="navbar-collapse collapse" id="js-bootstrap-collapse">
+      
+
+<form class="navbar-form navbar-right" action="/search/" name="searchform" id="search" role="search">
+<div class="form-group">
+    <div class="input-group">
+        <input class="form-control" name="q" id="navbar_search_input" type="search" placeholder="Search">
+        <span class="input-group-btn">
+            <button type="submit" class="btn"><span class="fui-search"></span></button>
+        </span>
+    </div>
+</div>
+</form>
+      
+        
+<ul id="acc-menubar"class="nav navbar-nav" role="menubar"><li id="top_menu_143" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Products
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_3406" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        class="sub_active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        >What&#39;s New in 19.5</a><ul class="submenu" role="menu"><li id="top_menu_3406" role="none"><a role="menuitem" href="/products/whats-new-in-195/" tabindex="-1" aria-haspopup="true" aria-expanded="false">
+        Overview
+    </a><li id="top_menu_3408"><a role="menuitem" href="/products/whats-new-in-195/solaris/">Solaris</a></li><li id="top_menu_3409"><a role="menuitem" href="/products/whats-new-in-195/karma/">Karma</a></li><li id="top_menu_3410"><a role="menuitem" href="/products/whats-new-in-195/character-fx/">Character FX</a></li><li id="top_menu_3411"><a role="menuitem" href="/products/whats-new-in-195/pyro-fx/">Pyro FX</a></li><li id="top_menu_3412"><a role="menuitem" href="/products/whats-new-in-195/flip-fluids/">FLIP Fluids</a></li></ul></li><li id="top_menu_1828" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        class="sub_active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        >Houdini</a><ul class="submenu" role="menu"><li id="top_menu_1828" role="none"><a role="menuitem" href="/products/houdini/" tabindex="-1" aria-haspopup="true" aria-expanded="false">
+        Overview
+    </a><li id="top_menu_1835"><a role="menuitem" href="/products/houdini/fx-features/">FX Features</a></li><li id="top_menu_1836"><a role="menuitem" href="/products/houdini/core-features/">CORE Features</a></li><li id="top_menu_2442"><a role="menuitem" href="/products/houdini/solaris/">Solaris</a></li><li id="top_menu_2062"><a role="menuitem" href="/products/houdini/pdg/">PDG</a></li></ul></li><li id="top_menu_1884" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        class="sub_active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        >Houdini Engine</a><ul class="submenu" role="menu"><li id="top_menu_1884" role="none"><a role="menuitem" href="/products/houdini-engine/" tabindex="-1" aria-haspopup="true" aria-expanded="false">
+        Overview
+    </a><li id="top_menu_1886"><a role="menuitem" href="/products/houdini-engine/plug-ins/">Engine Plug-Ins</a></li><li id="top_menu_1887"><a role="menuitem" href="/products/houdini-engine/batch/">Batch</a></li></ul></li><li id="top_menu_1900" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/products/houdini-indie/" role="menuitem"
+        >Houdini Indie</a></li><li id="top_menu_1661" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/products/compare/" role="menuitem"
+        >Compare</a></li><li id="top_menu_2417" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/products/sidefx-labs/" role="menuitem"
+        >SideFX Labs</a></li><li id="top_menu_3124" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/products/partners/" role="menuitem"
+        >Partners</a></li></ul></li><li id="top_menu_1186" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Industries
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_1839" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/industries/filmtv/" role="menuitem"
+        >Film &amp; TV</a></li><li id="top_menu_1853" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/industries/games/" role="menuitem"
+        >Game Development</a></li><li id="top_menu_1854" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/industries/motion-graphics/" role="menuitem"
+        >Motion Graphics</a></li><li id="top_menu_1855" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/industries/virtual-reality/" role="menuitem"
+        >Virtual Reality</a></li></ul></li><li id="top_menu_2" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Community
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_1008" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/forum/" role="menuitem"
+        >Forum</a></li><li id="top_menu_1018" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/community/" role="menuitem"
+        >News Feed</a></li><li id="top_menu_1377" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/community/section/stories/" role="menuitem"
+        >Project Profiles</a></li><li id="top_menu_1007" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/gallery/" role="menuitem"
+        >Gallery</a></li><li id="top_menu_3106" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/community/section/contest/" role="menuitem"
+        >Contests &amp; Jams</a></li><li id="top_menu_2652" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/community/section/event/" role="menuitem"
+        >Houdini HIVE Events</a></li><li id="top_menu_1233" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/events/calendar/" role="menuitem"
+        >Event Calendar</a></li><li id="top_menu_1314" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/user-groups/" role="menuitem"
+        >User Groups</a></li></ul></li><li id="top_menu_231" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Learn
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_3441" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/learn-main-menu/start-here/" role="menuitem"
+        >Start Here</a></li><li id="top_menu_3407" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/learn/mylearning/" role="menuitem"
+        >My Learning</a></li><li id="top_menu_1817" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/learn/" role="menuitem"
+        >Learning Paths</a></li><li id="top_menu_1037" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/tutorials/" role="menuitem"
+        >Tutorials</a></li><li id="top_menu_3392" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/learn-main-menu/tech-demos/" role="menuitem"
+        >Tech Demos</a></li><li id="top_menu_1375" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/learn/talks/" role="menuitem"
+        >Talks &amp; Webinars</a></li><li id="top_menu_1039" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/schools/" role="menuitem"
+        >Schools &amp; Training</a></li><li id="top_menu_2102" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        class="sub_active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        >Education Programs</a><ul class="submenu" role="menu"><li id="top_menu_2102" role="none"><a role="menuitem" href="/education/education-programs/" tabindex="-1" aria-haspopup="true" aria-expanded="false">
+        Overview
+    </a><li id="top_menu_2104"><a role="menuitem" href="/education/education-programs/students/">Students</a></li><li id="top_menu_2105"><a role="menuitem" href="/education/education-programs/instructors/">Instructors</a></li><li id="top_menu_2106"><a role="menuitem" href="/education/education-programs/administrators/">Administrators</a></li></ul></li></ul></li><li id="top_menu_118" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Support
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_116" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/support-programs/" role="menuitem"
+        >Customer Support</a></li><li id="top_menu_1004" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/faq/" role="menuitem"
+        >Help Desk | FAQ</a></li><li id="top_menu_181" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/Support/system-requirements/" role="menuitem"
+        >System Requirements</a></li><li id="top_menu_1006" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/docs/" role="menuitem"
+        >Documentation</a></li><li id="top_menu_1005" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/changelog/" role="menuitem"
+        >Changelog / Journal</a></li><li id="top_menu_491" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/bugs/submit/" role="menuitem"
+        >Report a Bug/RFE</a></li></ul></li><li id="top_menu_168" class="dropdown" role="none"><a role="menuitem" tabindex="3" aria-haspopup="true" aria-expanded="false"
+        
+        class="dropdown-toggle disabled" data-toggle="dropdown"
+        >
+            Get
+        </a><ul class="dropdown-menu" role="menubar"><li id="top_menu_557" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/buy/" role="menuitem"
+        >Buy</a></li><li id="top_menu_3352" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/download/" role="menuitem"
+        >Download</a></li><li id="top_menu_2450" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/contentlibrary/" role="menuitem"
+        >Content Library</a></li><li id="top_menu_1638" class="dropdown dropdown-hover" role="none"><a role="menuitem" tabindex="-1"
+        
+        href="/contact/" role="menuitem"
+        >Contact Info</a></li></ul></li></ul>
+      
+    </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+<div id="flex-main-content" class="is-wrapper">
+
+
+
+
+
+
+<!-- Begin Banner -->
+
+ 
+<div class="main_banner">
+    
+        <div class="is-overlay-vimeo">
+            <iframe src="https://player.vimeo.com/video/292354811?background=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+        
+        <div class="is-overlay-content text-center">
+            <div class="col-md-12 "><img src="https://media.sidefx.com/uploads/products/banners/houdini_logo.svg"/></div>
+        </div>
+        
+        
+    
+
+</div>
+
+
+    <!-- Second template again, with in_menu support -->
+
+
+
+
+
+    
+        <!-- Second template again, with in_menu support -->
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+    <div class="nav-sidefxpage-plus">
+        <nav role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="/products/houdini/"
+                    class="active">Overview</a></li>
+                <!-- Second template again, with in_menu support -->
+
+
+
+
+
+
+
+
+
+
+
+    
+        <li>
+            <a href="/products/houdini/fx-features/"
+                >FX Features</a>
+        </li>
+    
+
+
+
+    
+        <li>
+            <a href="/products/houdini/core-features/"
+                >CORE Features</a>
+        </li>
+    
+
+
+
+    
+        <li>
+            <a href="/products/houdini/solaris/"
+                >Solaris</a>
+        </li>
+    
+
+
+
+    
+        <li>
+            <a href="/products/houdini/pdg/"
+                >PDG</a>
+        </li>
+    
+
+
+
+
+            </ul>
+        </nav>
+    </div>
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- end banner -->
+
+<div class="is-section is-box is-bg-grey is-section-20">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-980" id="contentareahtN4lSc" style=""><div class="row"><div class="col-md-12">
+                    <div class="display">
+                             <h1 style="text-align: center;">Fully Procedural</h1>
+                             <p style="text-align: center; color: rgb(136, 136, 136);">Houdini is built from the ground up to be a procedural system that empowers artists to work freely, create multiple iterations and rapidly share workflows with colleagues.&nbsp;</p>
+                      </div>
+</div></div>
+
+    <div class="row"><div class="col-md-4 col-md-offset-1">
+
+                    <figure><div style="text-align: center;"><a href="https://vimeo.com/441339532" data-lity="" title=""><img src="https://media.sidefx.com/uploads/home/filmtv_reel_thumb_july_2020.jpg" alt=""></a></div>
+
+                        <figcaption>
+
+                            <p style="text-align: center;">FILM/TV REEL</p>
+
+                        </figcaption>   
+
+                </figure>
+
+            </div>
+
+            <div class="col-md-4 col-md-offset-2">
+
+                    <figure><div style="text-align: center;"><a href="https://vimeo.com/571694031" data-lity="" title=""><img src="https://media.sidefx.com/uploads/home/game_reel_thumb_m21.jpg" alt=""></a></div>
+
+                        <figcaption>
+
+                            <p style="text-align: center;">GAMEDEV REEL</p>
+
+                        </figcaption>   
+
+                </figure>
+
+            </div></div><div class="row"><div class="col-md-12"><div style="text-align: center;"><a href="https://www.sidefx.com/download/" class="is-btn is-btn-ghost2 is-upper is-rounded-30 edit" title="" style="font-size: 16px; color: rgb(255, 255, 255); background-color: rgb(255, 102, 0);">Try for FREE!</a></div>
+
+            </div></div></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+<div class="is-section is-light-text is-box is-section-40">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg is-scale-animated" style="background-image: url(https://media.sidefx.com/uploads/products/overview/nodes.jpg); display: block;"></div>
+            <div class="is-overlay-color" style="display: block;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-left is-content-500" id="contentareadqnxNYE" style=""><div class="row"><div class="col-md-12">
+
+            		    <div class="display">
+                		    <h1 style="margin:0.2em 0">FLEXIBLE</h1>
+                             <h2>Node-based Workflow</h2>
+            		    </div>
+
+
+<p>In Houdini, every action is stored in a node. These nodes are then “wired” into networks which define a “recipe” that can be tweaked to refine the outcome then repeated to create similar yet unique results. The ability for nodes to be saved and to pass information, in the form of attributes, down the chain is what gives Houdini its procedural nature.</p>
+
+                </div></div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="is-section is-box is-bg-grey is-section-40">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid" id="contentareajGSFky2" style=""><div class="row"><div class="col-md-12">
+                    <div class="display">
+                         <h1 style="text-align: center;">INTUITIVE</h1>
+                         <h2 style="text-align: center;">Artist Friendly Tools</h2>
+                     
+                    <p style="text-align: center;">While the nodes are what makes Houdini unique and give it power, there are lots of viewport and shelf tools that allow for artist-friendly viewport interactions. Behind the scenes, Houdini builds up the nodes and networks for you. Houdini lets artists explore different creative paths because it is easy to branch off a new node to explore alternative solutions.</p>
+</div>
+                </div></div>
+
+    <div class="row"><div class="col-md-12">
+
+            <img src="https://media.sidefx.com/uploads/products/overview/character_houdini_ui.jpg" alt="">
+
+            <p style="text-align: center;"><i>Luchttann character from Ary and the Secret of Seasons by<a href="https://exiin.com" title=""> eXiin</a></i></p>
+
+        </div></div></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+<div class="is-section is-light-text is-box is-section-50">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg is-scale-animated" style="background-image: url(&quot;https://media.sidefx.com/uploads/products/overview/vfx_fire.jpg&quot;); display: block;"></div>
+            <div class="is-overlay-color" style="display: block;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-left is-content-380" id="contentareaGhjahva" style=""><div class="row"><div class="col-md-12">
+
+            		    <div class="display">
+                		    <h1 style="margin:0.2em 0">NEXT LEVEL</h1>
+                             <h2>VFX &amp; Simulation</h2>
+            		    </div>
+                        <p>Visual effects artists gravitate to Houdini because its procedural workflow is ideal for creating sophisticated particle and dynamic simulations. Effects are typically designed to react to actions taking place in a shot and a procedural solution “automates” these reactions providing studios with more creative control and more rapid turnaround.</p>
+
+                </div></div></div>
+            </div>
+           <div class="content-credits content-credits-right">Artwork by Tighe Rzankowski</div>
+        </div>
+
+    </div>
+
+<div class="is-section is-light-text is-box is-section-50">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg" style="background-image: url(&quot;https://media.sidefx.com/uploads/products/overview/houses_anastasia_opara_wbackground.jpg&quot;); display: block;"></div>
+            <div class="is-overlay-color" style="display: block;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered is-content-top">
+                <div class="is-container is-builder is-content-800 container-fluid" id="contentareaxHJb3eW" style=""><div class="row"><div class="col-md-12">
+             <div class="display">
+                    <h1 style="text-align: center; font-size: 48px; letter-spacing: 0px; line-height: 52px;">DIRECTABLE</h1>
+                    <h2 style="text-align: center;">Shots &amp; Multiple Iterations</h2>
+              </div>
+<p style="text-align: center;">Houdini lets you make creative decisions deep into production as changes made to Houdini nodes cascade through the network to create a new and unique result. This directability is retained throughout the creative process and can be used to make last minute decisions that would be too costly in a traditional CG pipeline.</p>
+                </div></div></div>
+            </div>
+           <div class="content-credits content-credits-right">Artwork by Anastasia Opara</div>
+        </div>
+
+    </div>
+
+<div class="is-section is-light-text is-box is-section-20">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg" style="background-image: url(&quot;https://media.sidefx.com/uploads/products/overview/pipes.jpg&quot;); display: block;"></div>
+            <div class="is-overlay-color" style="display: block;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-left is-content-380" id="contentareahf1t23s" style=""><div class="row"><div class="col-md-12">
+
+            		    <div class="display">
+                		    <h1 style="margin:0.2em 0">POWERFUL</h1>
+                            <h2>Pipeline in a Box</h2>
+            		    </div>
+<p>Whether you are setting up a shot or building a game level, Houdini lets you create tools that can be reused many times during a project’s life cycle. Instead of simply reacting to issues and problems, you will be able to plan ahead and visualize and refine your pipeline.&nbsp;</p>
+
+                </div></div></div>
+            </div>
+
+        </div>
+           <div class="content-credits content-credits-right">Artwork by Remy Wollerich</div>
+    </div>
+
+<div class="is-section is-light-text is-box is-section-20">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg is-scale-animated" style="background-image: url(&quot;https://media.sidefx.com/uploads/products/overview/robot_PHILIPP_VON_PREUSCHEN_cropped.jpg&quot;); display: block;"></div>
+            <div class="is-overlay-color" style="display: block;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-right is-content-380" id="contentareaIi8RAw3" style=""><div class="row"><div class="col-md-12">
+
+            		    <div class="display">
+                		        <h1 style="margin:0.2em 0">ROBUST</h1>
+                               <h2>Asset Creation Tools</h2>
+            		    </div>
+<p>A big benefit of Houdini’s node-based approach is the ability to encapsulate node networks into custom nodes that are shareable. Create these digital assets without writing any code then share them with other Houdini artists.&nbsp;</p><p>With the Houdini Engine, open assets in other applications such as Autodesk Maya, Autodesk 3ds Max, C4D, UE4 and Unity with the asset’s procedural controls available for editing in the host app.</p>
+
+                </div></div></div>
+            </div>
+
+        </div>
+           <div class="content-credits content-credits-left">Artwork by Phillip Von Preuchen</div>
+    </div>
+
+<div class="is-section is-shadow-1 is-bg-grey is-section-20">
+
+        <div class="is-boxes">
+
+            <div class="is-box-3 is-light-text is-box" style="background-color: rgb(158, 158, 158);">
+
+                <div class="is-boxes">
+                        
+                    <div class="is-overlay">
+                        <div class="is-overlay-bg" style="background-image: url(&quot;/static/images/contentbox/sections/sample.jpg&quot;); display: none;"></div>
+                        <div class="is-overlay-color" style="display: none;"></div>
+                        <div class="is-overlay-content"></div>
+                    </div> 
+
+                    <div class="is-box-centered is-content-top">
+                        <div class="is-container is-builder is-content-500 container-fluid" id="contentareaNe4QqBp" style=""><div class="row"><div class="col-md-12 center">
+<img src="https://media.sidefx.com/uploads/products/overview/camera_icon.svg" style="width:150px;height:150px;" alt="">
+
+                <h4>Film &amp; TV</h4>
+
+                <p>Create more shots under tight deadlines while achieving feature film quality results with Houdini’s procedural node-based workflow. Experience unprecedented levels of flexibility and control to enhance both your creativity and productivity.</p>
+
+            <a href="/industries/filmtv/" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">Learn More</a>
+                        </div></div></div>
+                    </div>
+
+                </div>
+
+            </div>   
+
+            <div class="is-box-3 is-box is-dark-text" style="background-color: rgb(189, 189, 189);">
+
+                <div class="is-boxes">
+                        
+                    <div class="is-overlay">
+                        <div class="is-overlay-bg" style="background-image: url(&quot;/static/images/contentbox/sections/sample.jpg&quot;); display: none;"></div>
+                        <div class="is-overlay-color" style="display: none;"></div>
+                        <div class="is-overlay-content"></div>
+                    </div> 
+
+                    <div class="is-box-centered is-content-top">
+                        <div class="is-container is-builder container-fluid is-content-380" id="contentareasF8OFR5" style=""><div class="row"><div class="col-md-12 center">
+<img src="https://media.sidefx.com/uploads/products/overview/joystick.svg" style="width:150px;height:150px;" alt="">
+
+                <h4>Gamedev</h4>
+
+                <p>Game developers face a growing demand to build huge immersive worlds populated with vast amounts of content. In order to achieve great gameplay while meeting deadlines, a procedural approach using Houdini offers a smarter way to create quality games.</p>
+
+            <a href="/industries/games/" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">Learn More</a>
+                        </div></div></div>
+                    </div>
+
+                </div>
+
+            </div>
+                    
+            <div class="is-box-3 is-box is-light-text" style="background-color: rgb(158, 158, 158);">
+
+                <div class="is-boxes">
+                        
+                    <div class="is-overlay">
+                        <div class="is-overlay-bg" style="background-image: url(&quot;/static/images/contentbox/sections/sample.jpg&quot;); display: none;"></div>
+                        <div class="is-overlay-color" style="display: none;"></div>
+                        <div class="is-overlay-content"></div>
+                    </div> 
+
+                    <div class="is-box-centered is-content-top">
+                        <div class="is-container is-builder is-content-500 container-fluid" id="contentareasJxdbHw" style=""><div class="row"><div class="col-md-12 center">
+<img src="https://media.sidefx.com/uploads/products/overview/motiongraphics_icon.svg" style="width:150px;height:150px;" alt="">
+
+                <h4>Motion Graphics</h4>
+
+                <p>Designers, animators and storytellers use motion graphics to create content that stimulates audiences using powerful and compelling visuals.&nbsp;<span style="font-size: 1.07em;">Create a wide range of aesthetic and dynamic experiences using Houdini and its procedural node-based toolset.&nbsp;</span></p>
+
+            <a href="/industries/motion-graphics/" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">Learn More</a>
+                        </div></div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="is-box-3 is-box is-dark-text" style="background-color: rgb(189, 189, 189);">
+
+                <div class="is-boxes">
+                        
+                    <div class="is-overlay">
+                        <div class="is-overlay-bg" style="background-image: url(&quot;/static/images/contentbox/sections/sample.jpg&quot;); display: none;"></div>
+                        <div class="is-overlay-color" style="display: none;"></div>
+                        <div class="is-overlay-content"></div>
+                    </div> 
+
+                    <div class="is-box-centered is-content-top">
+                        <div class="is-container is-builder container-fluid" id="contentareayqqFKHu" style=""><div class="row"><div class="col-md-12 center">
+<img src="https://media.sidefx.com/uploads/products/overview/vr_icon.svg" style="width:150px;height:150px;" alt="">
+
+                <h4>VR</h4>
+
+                <p>Virtual and Augmented Reality creates a complete experience that takes the viewer to places they've never been before. Houdini provides a powerful set of tools that makes it easier to create and manage the content used to populate these amazing digital worlds.&nbsp;</p>
+
+            <a href="/industries/virtual-reality/" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">LEARN MORE</a>
+                        </div></div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="is-section is-box is-section-20 is-light-text is-align-center" style="background-color: rgb(97, 97, 97);">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid is-content-1200" id="contentareanEWJKWw" style=""><div class="row"><div class="col-md-6">
+            <div class="padding-5"><h4>COMMERCIAL</h4></div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="padding-5"><h4>INDIE</h4></div>
+        </div>
+
+  <div class="col-md-3">
+            <div class="padding-5"><h4><span style="font-size: 1.07em;">LEARNING</span><br></h4></div>
+        </div></div><div class="row"><div class="col-md-3">
+            <div class="padding-20">
+                <img src="https://media.sidefx.com/uploads/products/overview/houdini_white.svg" style="width:100px;height:100px;" alt="">
+
+                <h4>Houdini FX</h4>
+
+                <p>Houdini FX delivers a powerful and accessible 3D experience with its procedural node-based workflow, while providing tools for simulating &nbsp;fluids, destruction fx, pyro fx, grains, cloth and crowds.</p>
+
+            <a href="/buy/#houdini2" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">BUY NOW!</a>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="padding-20">
+                <img src="https://media.sidefx.com/uploads/products/overview/houdini_white.svg" style="width:100px;height:100px;" alt="">
+
+                <h4>Houdini CORE</h4>
+
+                <p>Houdini Core is designed for modelers, lighters, character riggers, animators and game artists. Scenes and digital assets created in Houdini FX can be opened, manipulated and rendered in Houdini Core.&nbsp;</p>
+
+            <a href="/buy/#houdini2" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">BUY NOW!</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="padding-20">
+                <img src="https://media.sidefx.com/uploads/products/overview/houdini_white.svg" style="width:100px;height:100px;" alt="">
+
+                <h4>Houdini Indie</h4>
+
+                <p>Houdini Indie makes all of Houdini FX’s animation and VFX tools available under an indie license to animators and gamedevs who want to use Houdini during the incubation stage of their business.</p>
+
+            <a href="/buy/#houdini1" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">BUY NOW!</a>
+            </div>
+        </div>
+
+  <div class="col-md-3">
+            <div class="padding-20">
+                <img src="https://media.sidefx.com/uploads/products/overview/houdini_white.svg" style="width:100px;height:100px;" alt="">
+
+                <h4>Houdini Apprentice</h4>
+
+                <p>With Houdini Apprentice, students and hobbyists have access to virtually all of the features of the award-winning Houdini FX which can be used &nbsp;to create personal non-commercial projects.</p>
+
+            <a href="/buy/#houdini0" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">FREE DOWNLOAD!</a>
+            </div>
+        </div></div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <br><br>
+
+        </div>
+
+    </div>
+
+
+    
+    <div class="row"><div class="col-md-12">
+
+            <a href="/products/compare/" class="is-btn is-btn-ghost1 is-upper is-rounded-30 edit" title="">Compare Products</a>
+
+        </div></div></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+<div class="is-section is-box is-section-20 is-light-text">
+
+        <div class="is-overlay">
+            <div class="is-overlay-bg" style="background-image: url(&quot;https://media.sidefx.com/uploads/products/overview/learn_houdini_book.jpg&quot;); display: block;"></div>
+            <div class="is-overlay-color" style="display: block; background-color: rgb(0, 0, 0); opacity: 0.5;"></div>
+            <div class="is-overlay-content"></div>
+        </div> 
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder is-content-800 container-fluid is-content-right" id="contentareacnZNLRq" style=""><div class="row"><div class="col-md-12">
+
+            		    <div class="display">
+                		    <h1>LEARN HOUDINI</h1>
+            		    </div>
+                        <p>Learn how to use Houdini’s node-based workflow to create optimized game art using tutorials created by industry professionals and by SideFX.</p>
+
+                </div></div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <a href="/learn/getting_started/" class="is-btn is-btn-ghost1 is-upper edit" title="">Start Here</a>
+
+        </div>
+    </div></div>
+            </div>
+
+        </div>
+
+    </div>
+<!-- end content_builder_content -->
+
+
+
+<footer class="bottom-menu bottom-menu-inverse is-section">
+
+<div class="container">
+    <div class="row">
+        
+          
+
+<div class="col-md-2 col-sm-2"><h5 class="title">PRODUCTS <i class="visible-xs pull-right fui-plus"></i></h5><ul class="hidden-xs bottom-menu-list"><li><a href="/products/houdini/">Houdini</a></li><li><a href="/products/houdini-engine/">Houdini Engine</a></li><li><a href="/products/houdini-indie/">Houdini Indie</a></li></ul></div><div class="col-md-2 col-sm-2"><h5 class="title">LEARN <i class="visible-xs pull-right fui-plus"></i></h5><ul class="hidden-xs bottom-menu-list"><li><a href="/learn/">Learning Paths</a></li><li><a href="/tutorials/">Tutorials</a></li><li><a href="/learn/talks/">Talks &amp; Webinars</a></li><li><a href="/schools/">Schools &amp; Training</a></li><li><a href="/education/education-programs/">Education Programs</a></li></ul></div><div class="col-md-2 col-sm-2"><h5 class="title">SUPPORT <i class="visible-xs pull-right fui-plus"></i></h5><ul class="hidden-xs bottom-menu-list"><li><a href="/support-programs/">Customer Support</a></li><li><a href="/faq/">Help Desk | FAQ</a></li><li><a href="/docs/">Documentation</a></li><li><a href="/bugs/submit/">Report a Bug/RFE</a></li><li><a href="/Support/sales-inquiry/">Sales Inquiry</a></li></ul></div><div class="col-md-2 col-sm-2"><h5 class="title">LEGAL <i class="visible-xs pull-right fui-plus"></i></h5><ul class="hidden-xs bottom-menu-list"><li><a href="/legal/terms-and-conditions/">Terms of Use</a></li><li><a href="/legal/privacy-policy/">Privacy Policy</a></li><li><a href="/legal/license-agreement/">License Agreement</a></li><li><a href="/legal/accessibility/">Accessibility</a></li><li><a href="/responsible-disclosure-program/">Responsible Disclosure Program</a></li></ul></div><div class="col-md-2 col-sm-2"><h5 class="title">COMPANY <i class="visible-xs pull-right fui-plus"></i></h5><ul class="hidden-xs bottom-menu-list"><li><a href="/company/about-sidefx/">About SideFX</a></li><li><a href="/company/press/">Press</a></li><li><a href="https://shop.spreadshirt.com/thehoudiniboutique/">T-Shirt Store</a></li><li><a href="/careers/">Careers</a></li><li><a href="/company/internships/">Internships</a></li><li><a href="/company/contact-us/">Contact Us</a></li></ul></div>
+        
+    </div>
+</div>
+
+<div class="footnote row">
+      <span class="copyright col-md-6">Copyright © SideFX 2023. All Rights Reserved.</span>
+      
+      <ul class="bottom-menu-iconic-list col-md-6 text-right">
+          <li><a href="https://www.facebook.com/Houdini3D/" aria-label="SideFX on Facebook"><i aria-hidden="true" role="presentation" class="fab fa-facebook fa-lg"></i></a></li>
+          <li><a href="https://twitter.com/sidefx" aria-label="SideFX on Twitter"><i aria-hidden="true" role="presentation" class="fab fa-twitter-square fa-lg"></i></a></li>
+          <li><a href="https://www.instagram.com/sidefxhoudini/" aria-label="SideFX on Instagram"><i aria-hidden="true" role="presentation" class="fab fa-instagram fa-lg"></i></a></li>
+          <li><a href="https://www.meetup.com/pro/houdini/" aria-label="SideFX Meetups"><i aria-hidden="true" role="presentation" class="fab fa-meetup fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/goprocedural" aria-label="SideFX on Vimeo"><i aria-hidden="true" role="presentation" class="fab fa-vimeo-square fa-lg"></i></a></li>
+          <li><a href="https://www.youtube.com/user/houdini3d" aria-label="SideFX on Youtube"><i aria-hidden="true" role="presentation" class="fab fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/side-effects-software" aria-label="SideFX on Linkedin"><i aria-hidden="true" role="presentation" class="fab fa-linkedin fa-lg"></i></a></li>
+      </ul>
+      
+</div>
+
+</footer>
+
+
+  
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-168H7NMCYC"></script>
+    <script nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-168H7NMCYC', {
+        'custom_map': {'dimension1': 'Author'}
+      });
+      
+    </script>
+
+    <!-- Vimeo Analytics -->
+    <script type="text/javascript" defer="defer" src="https://extend.vimeocdn.com/ga/1723479.js"></script>
+    <!-- End of Vimeo Analysitcs -->
+
+    <!-- Facebook Pixel Code -->
+    <script nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '364163793745190');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=364163793745190&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
+<script type="text/javascript" nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+	// top menu highlight
+    
+    page_parent = 143;
+    
+
+    if (page_parent != null) {
+        item = $('#top_menu_'+page_parent);
+        item.addClass('active');
+    }
+
+    // jQuery plugin to prevent double submission of forms
+    jQuery.fn.preventDoubleSubmission = function() {
+      $(this).on('submit',function(e){
+        var $form = $(this);
+        if ($form.data('submitted') === true) {
+          // Previously submitted - don't submit again
+          e.preventDefault();
+        } else {
+          // Mark it so that the next submit can be ignored
+          $form.data('submitted', true);
+        }
+      });
+      // Keep chainability
+      return this;
+    };
+</script>
+<script type="text/javascript" nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+$(function() {
+    // Header: top menu highlight
+    
+      $('#top_menu_1828').addClass('active');
+      
+      page_parent = 143;
+      $('#top_menu_143').addClass('active');
+      
+    
+
+    // Footer
+    $("footer .title").click(function(e) {
+        if (!$(e.target).closest("ul").length) {
+            $(this).next().toggleClass("hidden-xs")
+        }
+    })
+    ////////
+    // Flat-ui checkboxes
+    $('[data-toggle="checkbox"]').radiocheck();
+    $('[data-toggle="radio"]').radiocheck();
+    // Flat-ui selects
+    $(".select").select2();
+    $('.select-search').select2({dropdownCssClass: 'show-select-search'});
+    // Focus state for append/prepend inputs
+    $('.input-group').on('focus', '.form-control', function () {
+      $(this).closest('.input-group, .form-group').addClass('focus');
+    }).on('blur', '.form-control', function () {
+      $(this).closest('.input-group, .form-group').removeClass('focus');
+    });
+    // When removing uploaded file, check the deletion checkbox for
+    // crispy-flat-ui/image-upload-field.html
+    $('.clear-file').click(function() {
+      delete_input_id = $(this).attr('data-delete-input-id');
+      $('#'+delete_input_id).prop('checked', true);
+    });
+    $('.file-selector').change(function() {
+      if ($(this).val() != ''){
+        delete_input_id = $(this).attr('data-delete-input-id');
+        $('#'+delete_input_id).prop('checked', false);
+      }
+    });
+    /////////
+
+    
+});
+
+
+  // Prevent double submit of login form
+  $('#top-login-form').preventDoubleSubmission();
+
+</script>
+
+<script type="text/javascript" nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+  var menubar = new Menubar(document.getElementById('acc-menubar'));
+  menubar.init();
+
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript" nonce="ZkT/SAwxk2tyVI3t555a9Q==">
+$(document).ready(function(){$('#language_selector_form').change(function(){this.submit();});$('#language_selector_form .modal-footer').hide();});
+</script>
+<!-- Modal -->
+<div class="modal fade" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title" id="myModalLabel">Choose language</h4>
+      </div>
+
+      <form action="/i18n/" method="post" id="language_selector_form">
+        <div class="modal-body">
+            <input type="hidden" name="csrfmiddlewaretoken" value="gKBMs2HIj18wPxviFzTFOZ7otAC4C3Fgqyy702WgI77JuMkEuBqc2QilYnTGaucF">
+            <div class="form-group">
+              
+              <select name="language" class="form-control select select-sidefx">
+                
+                <option value="en"
+                selected="selected">
+                English
+                </option>
+                
+                <option value="ja"
+                >
+                日本語
+                </option>
+                
+              </select>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary" value="Change" />
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

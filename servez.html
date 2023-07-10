@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/servez/assets/css/style.css?v=be0670b80e5bd9734a015925ff8cf5f57e39efca">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/servez/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Servez | servez</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Servez" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A simple web server for local web development." />
+<meta property="og:description" content="A simple web server for local web development." />
+<link rel="canonical" href="https://greggman.github.io/servez/" />
+<meta property="og:url" content="https://greggman.github.io/servez/" />
+<meta property="og:site_name" content="servez" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Servez" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"A simple web server for local web development.","headline":"Servez","name":"servez","url":"https://greggman.github.io/servez/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/servez/">
+          <h1>servez</h1>
+        </a>
+        <h2>A simple web server for local web development.</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/greggman/servez" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="servez">Servez</h1>
+
+<p><img src="servez.jpg" width="512px" /></p>
+
+<p>A simple web server for local web development.</p>
+
+<p><img src="/servez/servez.gif" alt="screenshow" /></p>
+
+<h2 id="download">Download</h2>
+
+<p><a href="https://github.com/greggman/servez/releases/latest">Click Here</a></p>
+
+<p>Choose the <code class="language-plaintext highlighter-rouge">.dmg</code> for mac, the <code class="language-plaintext highlighter-rouge">.exe</code> for Windows, or the <code class="language-plaintext highlighter-rouge">.AppImage</code> for Linux.</p>
+
+<h2 id="what">What?</h2>
+
+<p>Servez is an stand alone app that runs a simple web server.
+with a GUI to start/stop and choose a folder to serve.</p>
+
+<p>I’ve worked with many people, often students, who are not
+comfortable with command lines and certainly not comfortable
+setting up a big server like Apache.</p>
+
+<p>Servez provides them with an easy way to get started without
+having to install multiple dependencies nor having to integrate
+things with their system. No adding to paths, no downloading
+3 different pieces of software. Just run and start.</p>
+
+<h2 id="https">HTTPS</h2>
+
+<p>Servez has an option to serve HTTPS. Servez
+uses a self signed certificate which means your browser will complain
+that the certificate is not valid. You can click “advanced” on the warning
+page and then “Proceed to &lt;localhost&gt;” to load the page.</p>
+
+<p>The point of HTTPS support in Servez is to make it easy to access HTTPS only APIs
+like WebXR etc… Clicking through a warning once in a while is a small tradeoff for
+automating HTTPS support.</p>
+
+<h2 id="command-line-arguments">Command Line Arguments</h2>
+
+<p>If you want an actual command line version then <a href="https://github.com/greggman/servez-cli">go here</a>.</p>
+
+<p>Otherwise these are the command line arguments to this app version
+of Servez.</p>
+
+<p><strong>NOTE! You must include an extra <code class="language-plaintext highlighter-rouge">--</code> <em>by itself</em> before your arguments</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>servez.exe --port=1234 c:\path\to\serve      # BAD!
+servez.exe -- --port=1234 c:\path\to\serve   # good
+</code></pre></div></div>
+
+<p>On Windows the default path is</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c:\Users\&lt;username&gt;\AppData\Local\Programs\Servez\Servez.exe
+</code></pre></div></div>
+
+<p>on MacOS the default path is</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Applications/Servez.app/Contents/MacOS/Servez
+</code></pre></div></div>
+
+<h3 id="usage">Usage</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>servez [options] path/to/serve
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--help</code> prints the command line arguments</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">-p</code> or <code class="language-plaintext highlighter-rouge">--port</code> sets the port as in <code class="language-plaintext highlighter-rouge">--port=1234</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--ssl</code> use HTTPS (see above)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--no-dirs</code> don’t show directory listings for folders</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--no-cors</code> don’t supply CORS headers</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--local</code> only allow access from local machine</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--no-index</code> don’t serve index.html for folders</p>
+  </li>
+</ul>
+
+<h2 id="development">Development</h2>
+
+<h3 id="setup">Setup</h3>
+
+<ul>
+  <li>
+    <p>Install node.js</p>
+
+    <p>You can <a href="https://nodejs.org">download it here</a>.</p>
+  </li>
+  <li>
+    <p>clone this repo</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/greggman/servez.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>change to the project’s folder</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd servez
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>install dependencies</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="organization">Organization</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>main.js          // runs the browser process
+src/index.html   // the main window
+src/index.js     // JS for the main window
+src/style.css    // CSS for the main window
+</code></pre></div></div>
+
+<h3 id="running">Running</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+</code></pre></div></div>
+
+<p>Will launch with devtools open. Setting the environment variable <code class="language-plaintext highlighter-rouge">SERVEZ_ECHO</code>
+to <code class="language-plaintext highlighter-rouge">true</code> will make issue many logging commands in <code class="language-plaintext highlighter-rouge">main.js</code> into the log
+in the app</p>
+
+<h3 id="building">Building</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run dist
+</code></pre></div></div>
+
+<p>Will build a file for distribution in the <code class="language-plaintext highlighter-rouge">dist</code> folder for the current platform.
+Note: On MacOS you’ll need an Apple Developer account. Then build like this</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">APPLEID</span><span class="o">=</span>&lt;your-apple-id&gt; <span class="nv">APPLEIDPASS</span><span class="o">=</span>&lt;see-below-password&gt; npm run dist
+</code></pre></div></div>
+
+<p>For <code class="language-plaintext highlighter-rouge">&lt;your-apple-id&gt;</code> instead your Apple ID. Example <code class="language-plaintext highlighter-rouge">APPLEID=myaccount@gmail.com</code> or whatever your
+Apple ID is.</p>
+
+<p>For <code class="language-plaintext highlighter-rouge">&lt;see-below-password&gt;</code> the first step is go to <a href="https://appleid.apple.com/">https://appleid.apple.com/</a>
+and generate an <em>app specific password</em>. Then, add that password to your keychain with an id of your choosing.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>security add-generic-password -a "&lt;your-apple-id&gt;" -w &lt;app-specific-password&gt; -s "&lt;key-id&gt;"
+</code></pre></div></div>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>security add-generic-password -a "myaccount@gmail.com" -w thea-pppa-sswo-rddd -s "foobar"
+</code></pre></div></div>
+
+<p>From then on, to build</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>APPLEID=myaccount@gmail.com APPLEIDPASS=@keychain:foobar npm run dist
+</code></pre></div></div>
+
+<p>During the build it will ask you to give it access to ‘foobar’</p>
+
+      </section>
+    </div>
+  </body>
+</html>
